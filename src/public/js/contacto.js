@@ -12,7 +12,7 @@ document.getElementById("idBtnEnviar").addEventListener("click", function(){
             m: strMensaje
         };
 
-        fetch("http://localhost:3000/api/email", {
+        fetch("https://nodejsfirstamanda.onrender.com/api/email", {
             method: "POST",
             body: JSON.stringify({
                 toMail: strEmail,
