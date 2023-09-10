@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title%>
+    </title>
+    <%- include('partials/head') %>
+
+    
+
+
+</head>
+
+<body>
+    <%- include('partials/navigation') %> <!--El guion es para decirle que se va a interpretar codigo (navegacion)-->
+
+        <div class="container vh-100 d-flex justify-content-center align-items-center">
+
+            <div class="card bg-dark textw-white text-center">
+                <div class="card-header">
+                    <h3>Contact me</h3>
+                </div>
+                <div class="card-body text-start">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="mail" placeholder="Email" class="form-control">
+                        </div>
+
+                     <div class="mb-3">
+                        <label for="message">Message</label>
+                        <textarea id="mensaje" rows="3" class="form-control" placeholder="Write a Message"></textarea>
+                     </div>
+
+                    <!--<ul class="error", id="error"></ul>--> 
+
+                        <button  class="btn btn-outline-primary btn-block" id="idBtnEnviar">
+                            Save
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <%- include('partials/footer') %> 
+
+      <!--  -->
+
+      <script src="js/contacto.js"></script>
+</body>
+
+</html>

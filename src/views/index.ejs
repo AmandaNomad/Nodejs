@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title%>>
+    </title>
+    <%- include('partials/head') %>
+</head>
+
+<body>
+    <%- include('partials/navigation') %>
+        <!--Nos ayuda a navegar. El guion es para decirle que se va a interpretar codigo (navegacion)-->
+        <!--CONTENIDO MAIN-->
+
+        <header class="container vh-100 d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="/img/amanda.png" alt="" class="w-30">
+                <h1 class="display-1 my-5 text-uppercase fw-bold">Site</h1>
+                <a href="/about" class="btn btn-outline-primary w-25">About</a>
+            </div>
+
+        </header>
+
+        <%- include('partials/footer') %>
+            <!--Nos ayuda a navegar. El guion es para decirle que se va a interpretar codigo (navegacion)-->
+
+
+</body>
+
+</html>
