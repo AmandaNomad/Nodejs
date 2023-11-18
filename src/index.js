@@ -30,15 +30,15 @@ const transporter = nodemailer.createTransport({
     port: 465,               // true for 465, false for other ports
     host: "smtp.gmail.com",
        auth: {
-            user: 'amanda.de.la.cruz.martinez1995@gmail.com',
-            pass: 'colwdrpalieopzfm',
+            user: 'gonzaleznomad33@gmail.com',
+            pass: 'sfak ymrp ecfu necw',
          },
     secure: true,
     });
 
     app.post('/api/email', (req, res) =>{
         const mailData = {
-            from: 'amanda.de.la.cruz.martinez1995@gmail.com',  // sender address
+            from: 'gonzaleznomad33@gmail.com',  // sender address
               to: req.body.toMail,   // list of receivers
               subject:  req.body.subject,
               //text: 'That was easy!',
